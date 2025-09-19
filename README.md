@@ -83,7 +83,10 @@ You can test load with:
 kubectl exec -it load-generator -n trend-app -- /bin/sh
 while true; do wget -q -O- http://trend-service:80/ > /dev/null; done
 
+<img width="1908" height="1018" alt="image" src="https://github.com/user-attachments/assets/63922dd3-6783-4780-8e14-06247bf8d4e7" />
+
 ** License **
 This project is licensed under the MIT License
+
 
 
