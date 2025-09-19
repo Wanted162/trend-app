@@ -1,0 +1,19 @@
+# Node
+node_modules/
+dist/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfvars
+plan.out
+
+# Keys & secrets
+trend-key
+trend-key.pub
+*.pem
+*.json
+
+# Logs
+*.log
