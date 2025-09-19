@@ -13,7 +13,7 @@ This project is designed to showcase modern DevOps workflows including **Docker*
 - **Kubernetes** → Deployment, Service, Ingress, and HPA manifests under `k8s/`
 - **Autoscaling** → Horizontal Pod Autoscaler based on CPU usage
 - **NodePort Access** → Application exposed via Kubernetes NodePort
-- **LoadBalancerArn": "arn:aws:elasticloadbalancing:ap-south-1:907969929387:loadbalancer/app/k8s-trendapp-trending-c80c7ce2ef/4daf9ddd2c928059**
+- **LoadBalancerArn: arn:aws:elasticloadbalancing:ap-south-1:907969929387:loadbalancer/app/k8s-trendapp-trending-c80c7ce2ef/4daf9ddd2c928059**
 ---
 
 ## 🏗️ Architecture Overview
