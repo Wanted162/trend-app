@@ -13,7 +13,7 @@ This project is designed to showcase modern DevOps workflows including **Docker*
 - **Kubernetes** → Deployment, Service, Ingress, and HPA manifests under `k8s/`
 - **Autoscaling** → Horizontal Pod Autoscaler based on CPU usage
 - **NodePort Access** → Application exposed via Kubernetes NodePort
-- **LoadBalancerArn: arn:aws:elasticloadbalancing:ap-south-1:907969929387:loadbalancer/app/k8s-trendapp-trending-c80c7ce2ef/4daf9ddd2c928059**
+- **Ingress/LoadBalancer -> k8s-trendapp-trending-c80c7ce2ef-300746421.ap-south-1.elb.amazonaws.com**
 ---
 
 ## 🏗️ Architecture Overview
@@ -74,7 +74,8 @@ kubectl apply -f k8s/hpa.yaml
 kubectl apply -f k8s/ingress.yaml
 
 5. Access the Application
-Via NodePort → http://<EC2-Node-Public-IP>:<NodePort>
+- Via NodePort → http://<EC2-Node-Public-IP>:<NodePort>
+- http://k8s-trendapp-trending-c80c7ce2ef-1234567890.ap-south-1.elb.amazonaws.com
 
 6. Autoscaling demo
 The Horizontal Pod Autoscaler (hpa.yaml) is configured to scale pods between 2–5 replicas when CPU usage crosses 30%.
